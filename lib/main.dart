@@ -58,10 +58,13 @@ class MyHomePage extends StatelessWidget {
     );
   }
 
-  Text timeText(String time) {
-    return Text(
-      'Il y a $time',
-      style: TextStyle(color: Colors.white),
+  Widget timeText(String time) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 10.0),
+      child: Text(
+        'Il y a $time',
+        style: TextStyle(color: Colors.black),
+      ),
     );
   }
 
@@ -150,18 +153,19 @@ class MyHomePage extends StatelessWidget {
               child: Text('Mes posts', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
             ),
             Container(
-              margin: EdgeInsets.only(top: 3, left: 3, right: 3),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.grey,),
+              margin: EdgeInsets.only(top: 3, left: 3, right: 3, bottom: 10),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Color.fromRGBO(204, 204, 204, 1),),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(children: [
-                    Padding(padding: EdgeInsets.all(8.0),
-                    child: pictureProfile(20, 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png'),),
-                    Text('Tommy Barral'),
-                    Spacer(),
-                    timeText('5min'),
-                  ],
+                  Row(
+                    children: [
+                      Padding(padding: EdgeInsets.all(8.0),
+                      child: pictureProfile(20, 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80'),),
+                      Text('Tommy Barral'),
+                      Spacer(),
+                      timeText('5min'),
+                    ],
                   ),
                   Image.network(
                     'https://www.lense.fr/wp-content/uploads/2020/12/International-Landscape-Photographer-Year-PhotographER-1st-KelvinYuen-2.jpg',
@@ -169,7 +173,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                  Padding(
                    padding: const EdgeInsets.all(8.0),
-                   child: Text('test this, test this, test this, test this, test this, test this, test this, test this, test this, test this',),
+                   child: Text('Image description and comments section.', style: TextStyle(fontSize: 18),),
                  ),
                   Divider(),
                   Row(
@@ -182,19 +186,18 @@ class MyHomePage extends StatelessWidget {
                       Text('0 Commentaires'),
                     ],
                   ),
-
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 3, left: 3, right: 3),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.grey,),
+              margin: EdgeInsets.only(top: 3, left: 3, right: 3, bottom: 10),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Color.fromRGBO(204, 204, 204, 1),),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(children: [
                     Padding(padding: EdgeInsets.all(8.0),
-                      child: pictureProfile(20, 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png'),),
+                      child: pictureProfile(20, 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80'),),
                     Text('Tommy Barral'),
                     Spacer(),
                     timeText('5min'),
@@ -206,7 +209,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('test this, test this, test this, test this, test this, test this, test this, test this, test this, test this',),
+                    child: Text('Image description and comments section.', style: TextStyle(fontSize: 18),),
                   ),
                   Divider(),
                   Row(
@@ -219,7 +222,6 @@ class MyHomePage extends StatelessWidget {
                       Text('0 Commentaires'),
                     ],
                   ),
-
                 ],
               ),
             ),

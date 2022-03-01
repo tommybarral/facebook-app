@@ -1,16 +1,14 @@
 # facebook_design
 
-A new Flutter project.
+Hard coded design of facebook profile page.
+Design simpliste de la page profile de facebook fait en code pure.
 
-## Getting Started
+## In the future / dans le future
+- Possibility to create a MODEL for Posts section / possibilité de créé un model pour la section Posts.
+- updating the UI / mise à jour de l'interface utilisateur.
+- make dynamic likes and comments section / rendre dynamique les "likes" et la section commentaire.
+- adding a drawer with differents pages / mettre un menu déroulant avec les différentes pages.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![cap1.png](/images/cap1.png)
+![cap2.png](/images/cap2.png)
